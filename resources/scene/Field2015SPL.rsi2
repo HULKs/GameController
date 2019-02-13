@@ -35,11 +35,11 @@
     <ComplexAppearance ref="fieldGreen"/>
 
     <Compound ref="fieldGoal" name="Goal1">
-      <Translation x="-3m"/>
+      <Translation x="-3775mm"/>
       <Set name="color" value="fieldWhite"/>
     </Compound>
     <Compound ref="fieldGoal" name="Goal2">
-      <Translation x="3m"/>
+      <Translation x="3775mm"/>
       <Rotation z="180degree"/>
       <Set name="color" value="fieldWhite"/>
     </Compound>
@@ -142,40 +142,40 @@
   </Vertices>
   <Vertices name="fieldLinesSmall">
 # middle line
--0.025 1.975 0
+-0.025 2.475 0
 -0.025 0.05 0
 0.025 0.05 0
-0.025 1.975 0
+0.025 2.475 0
 
 # goal line
-2.975 2.025 0
-2.975 -2.025 0
-3.025 -2.025 0
-3.025 2.025 0
+3.725 2.525 0
+3.725 -2.525 0
+3.775 -2.525 0
+3.775 2.525 0
 
 # outer line left
--2.975 2.025 0
--2.975 1.975 0
-2.975 1.975 0
-2.975 2.025 0
+-3.725 2.525 0
+-3.725 2.475 0
+3.725 2.475 0
+3.725 2.525 0
 
 # keeper line left
-2.425 1.125 0
-2.425 1.075 0
-2.975 1.075 0
-2.975 1.125 0
+3.175 1.125 0
+3.175 1.075 0
+3.725 1.075 0
+3.725 1.125 0
 
 # keeper line right
-2.975 -1.125 0
-2.975 -1.075 0
-2.425 -1.075 0
-2.425 -1.125 0
+3.725 -1.125 0
+3.725 -1.075 0
+3.175 -1.075 0
+3.175 -1.125 0
 
 # keeper line front
-2.375 1.125 0
-2.375 -1.125 0 
-2.425 -1.125 0
-2.425 1.125 0
+3.125 1.125 0
+3.125 -1.125 0
+3.175 -1.125 0
+3.175 1.125 0
   </Vertices>
 
   <Vertices name="fieldCross">
@@ -508,10 +508,10 @@
 1 0
   </TexCoords>
   <Vertices name="fieldGreenSmall">
--3.7 -2.7 -0.001
-3.7 -2.7 -0.001
-3.7 2.7 -0.001
--3.7 2.7 -0.001
+-4.25 -2.9 -0.001
+4.25 -2.9 -0.001
+4.25 2.9 -0.001
+-4.25 2.9 -0.001
   </Vertices>
 
   <Vertices name="fieldNet">
@@ -584,7 +584,7 @@
   </ComplexAppearance>
 
   <ComplexAppearance name="fieldCrossSmall">
-    <Translation x="1.2" y="0" z="0"/>
+    <Translation x="2.45" y="0" z="0"/>
     <Surface ref="fieldWhite"/>
     <Vertices ref="fieldCross"/>
     <Quads>
