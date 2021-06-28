@@ -12,11 +12,11 @@
     <ComplexAppearance ref="fieldGreen"/>
 
     <Compound ref="fieldGoal" name="Goal1">
-      <Translation x="-4525mm"/>
+      <Translation x="-3775mm"/>
       <Set name="color" value="fieldWhite"/>
     </Compound>
     <Compound ref="fieldGoal" name="Goal2">
-      <Translation x="4525mm"/>
+      <Translation x="3775mm"/>
       <Rotation z="180degree"/>
       <Set name="color" value="fieldWhite"/>
     </Compound>
@@ -127,58 +127,58 @@
 
   <Vertices name="fieldLines">
 # middle line
--0.025 2.975 0
+-0.025 2.475 0
 -0.025 0.05 0
 0.025 0.05 0
-0.025 2.975 0
+0.025 2.475 0
 
 # goal line
-4.475 3.025 0
-4.475 -3.025 0
-4.525 -3.025 0
-4.525 3.025 0
+3.725 2.525 0
+3.725 -2.525 0
+3.775 -2.525 0
+3.775 2.525 0
 
 # outer line left
--4.475 3.025 0
--4.475 2.975 0
-4.475 2.975 0
-4.475 3.025 0
+-3.725 2.525 0
+-3.725 2.475 0
+3.725 2.475 0
+3.725 2.525 0
 
 # penalty area line left
-2.875 2.025 0
-2.875 1.975 0
-4.475 1.975 0
-4.475 2.025 0
+2.125 1.875 0
+2.125 1.825 0
+3.725 1.825 0
+3.725 1.875 0
 
 # penalty area line right
-4.475 -2.025 0
-4.475 -1.975 0
-2.875 -1.975 0
-2.875 -2.025 0
+3.725 -1.875 0
+3.725 -1.825 0
+2.125 -1.825 0
+2.125 -1.875 0
 
 # penalty area line front
-2.825 2.025 0
-2.825 -2.025 0
-2.875 -2.025 0
-2.875 2.025 0
+2.075 1.875 0
+2.075 -1.875 0
+2.125 -1.875 0
+2.125 1.875 0
 
 # goal area line left
-3.925 1.125 0
-3.925 1.075 0
-4.475 1.075 0
-4.475 1.125 0
+3.175 1.125 0
+3.175 1.075 0
+3.725 1.075 0
+3.725 1.125 0
 
 # goal area line right
-4.475 -1.125 0
-4.475 -1.075 0
-3.925 -1.075 0
-3.925 -1.125 0
+3.725 -1.125 0
+3.725 -1.075 0
+3.175 -1.075 0
+3.175 -1.125 0
 
 # goal area line front
-3.875 1.125 0
-3.875 -1.125 0
-3.925 -1.125 0
-3.925 1.125 0
+3.125 1.125 0
+3.125 -1.125 0
+3.175 -1.125 0
+3.175 1.125 0
   </Vertices>
   <Vertices name="fieldLines2015">
 # middle line
@@ -573,10 +573,10 @@
   </Vertices>
 
   <Vertices name="fieldGreen">
--5.2 -3.7 -0.001
-5.2 -3.7 -0.001
-5.2 3.7 -0.001
--5.2 3.7 -0.001
+-4.25 -2.9 -0.001
+4.25 -2.9 -0.001
+4.25 2.9 -0.001
+-4.25 2.9 -0.001
   </Vertices>
   <TexCoords name="fieldGreen">
 0 0
@@ -668,7 +668,7 @@
   </ComplexAppearance>
 
   <ComplexAppearance name="fieldCross">
-    <Translation x="3.2" y="0" z="0"/>
+    <Translation x="2.45" y="0" z="0"/>
     <Surface ref="fieldWhite"/>
     <Vertices ref="fieldCross"/>
     <Quads>
@@ -679,7 +679,7 @@
   </ComplexAppearance>
 
   <ComplexAppearance name="fieldCrossSmall">
-    <Translation x="1.2" y="0" z="0"/>
+    <Translation x="2.45" y="0" z="0"/>
     <Surface ref="fieldWhite"/>
     <Vertices ref="fieldCross"/>
     <Quads>
