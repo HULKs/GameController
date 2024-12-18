@@ -5,6 +5,7 @@ import data.GameControlReturnData;
 import data.PlayerInfo;
 import data.Rules;
 import data.SPL;
+import java.awt.Color;
 import teamcomm.data.GameState;
 import teamcomm.data.RobotState;
 import teamcomm.gui.Camera;
@@ -31,7 +32,7 @@ public class PlayerNumber extends PerPlayer {
             }
 
             camera.turnTowardsCamera(gl);
-            Text.drawText("" + msg.playerNum, 0, 0, 0.3f, Rules.league.teamColor[GameState.getInstance().getTeamColor(player.getTeamNumber(), player.getPlayerNumber())].getRGBColorComponents(null));
+            Text.drawText("" + msg.playerNum, 0, 0, 0.3f, new Color(42, 42, 42).getRGBColorComponents(null));
 
             gl.glPopMatrix();
         }

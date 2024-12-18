@@ -77,7 +77,7 @@ class LogYamlLoader extends Constructor {
     private final List<String> penalties = Arrays.asList(
             "noPenalty", "ballHolding", "playerPushing", "motionInSet", "fallenInactive", "illegalPosition",
             "leavingTheField", "pickedUp", "localGameStuck", "illegalPositionInSet", "playerStance",
-            "motionInStandby", "_12", "_13", "substitute"); // playingWithArmsHands = 1
+            "motionInInitial", "_12", "_13", "substitute"); // playingWithArmsHands = 1
 
     /** The current state of the GameController packet. */
     private final GameControlData data = new GameControlData();
@@ -293,8 +293,7 @@ class LogYamlLoader extends Constructor {
      * @param entry The attributes for a team.
      */
     private void parseTeamInfo(final TeamInfo info, final Map<String, ?> entry) {
-        final Integer goalkeeper = (Integer) entry.get("goalkeeper");
-        info.goalkeeper = goalkeeper == null ? 0 : (byte)(int) goalkeeper;
+        info.goalkeeper = (byte)(int)(Integer) entry.get("goalkeeper");
         info.score = (byte)(int)(Integer) entry.get("score");
         info.penaltyShot = (byte)(int)(Integer) entry.get("penaltyShot");
         info.singleShots = (short)(int)(Integer) entry.get("penaltyShotMask");
